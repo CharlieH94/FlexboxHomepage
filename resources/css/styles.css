@@ -1,0 +1,129 @@
+/* Universal Styles*/ -->  html background colour, font family and size for example
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+body{
+    margin-top: 3.375rem;
+}
+
+/* Header / Nav */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #171C21;
+    z-index: 5;
+    padding: 1rem;
+    border-bottom: #FEE58E 1px solid;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;    
+    padding: 0;
+    text-transform: uppercase;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a::before {
+    color: #FEE58E;
+}
+
+/* Main & Sections */
+
+
+
+/* Banner */
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.banner::before {
+    content: "";
+    background-image: url('https://consciousmuscle.net/wp-content/uploads/2015/07/dumbbell-rack.jpg');
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+.banner img {
+    max-width: 300px;
+    height: auto;
+}
+
+.banner h1, h3 {
+    margin: 0;
+    padding: 1rem;
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner h3 {
+    font-size: 1.5rem;
+}
+
+.banner-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/* Free Weights Section */
+
+/* Functional Equipment Section */
+
+/* Cardio Section */
+
+/* Trainers Section */
+
+/* Footer */
