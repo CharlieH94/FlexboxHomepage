@@ -45,7 +45,7 @@ header {
     background-color: #171C21;
     z-index: 5;
     padding: 1rem;
-    border-bottom: #FEE58E 1px solid;
+    border-bottom: #FEE58E 2px solid;
 }
 
 nav {
@@ -60,6 +60,12 @@ nav ul {
     padding: 0;
     text-transform: uppercase;
     
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 nav a {
@@ -143,24 +149,68 @@ nav a:active {
 }
 
 .item-container {   
+    display: flex;
+    justify-content: space-evenly;
     background-color: white;
     /* border-radius: 10px;
     margin: 0 0.25rem; */
-    padding: 1rem;
+    padding-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .image-container {
-    display: inline;
+    display: flex;
 }
 
-    /* Free Weights Section */
+figure {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+}
 
+img {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+}
 
+img.treadmill {
+    object-position: 0 80%;
+}
 
-    /* Functional Equipment Section */
+img.rower {
+    object-position: 30% 50%;
+}
 
-    /* Cardio Section */
+img.bike {
+    object-position: 0 70%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
 
     /* Trainers Section */
 
     /* Footer */
+
+    footer {
+        width: 100%;
+        background-color: #171C21;
+        padding: 1rem;
+        border-top: #FEE58E 2px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer h5 {
+        color: white;
+        font-weight: normal;
+    }
