@@ -30,7 +30,14 @@ body{
     margin-top: 3.375rem;
 }
 
-/* Header / Nav */
+.title {
+    font-weight: 600;
+}
+
+/* Header */
+
+    /*Nav */
+
 header {
     position: fixed;
     top: 0;
@@ -61,15 +68,16 @@ nav a {
     font-weight: 600;
 }
 
-nav a::before {
+nav a:hover {
     color: #FEE58E;
 }
 
-/* Main & Sections */
+nav a:active {
+   text-decoration: underline;
+}
 
 
-
-/* Banner */
+/* Main / Banner */
 
 .banner {
     position: relative;
@@ -89,6 +97,7 @@ nav a::before {
     right: 0;
     z-index: -1;
     opacity: 0.45;
+    
 }
 
 .banner img {
@@ -117,13 +126,41 @@ nav a::before {
     align-items: center;
 }
 
+/* Sections */
 
-/* Free Weights Section */
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #FEE58E;
+    
+}
 
-/* Functional Equipment Section */
+.title-container h2 {
+   text-align: center;
+   padding: 1rem;
+}
 
-/* Cardio Section */
+.item-container {   
+    background-color: white;
+    /* border-radius: 10px;
+    margin: 0 0.25rem; */
+    padding: 1rem;
+}
 
-/* Trainers Section */
+.image-container {
+    display: inline;
+}
 
-/* Footer */
+    /* Free Weights Section */
+
+
+
+    /* Functional Equipment Section */
+
+    /* Cardio Section */
+
+    /* Trainers Section */
+
+    /* Footer */
